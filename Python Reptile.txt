@@ -1,0 +1,36 @@
+first:
+
+pip install requests
+pip install BeautifulSoup4
+pip install jupyter
+
+second:
+
+1.Enter jupyter Notbook
+
+2.Code:
+
+import requests
+res = requests.get('www.xxx.xxx/xxx')
+res.encoding = 'utf-8'
+print(res.text)
+
+3.非结构化数据转换为结构化数据
+
+用BeautifulSoup类下的select方法：
+
+（1）使用select找出所有标签为a的元素
+
+a = soup.select('a')
+pritn(a)
+
+（2）使用select找出所有id为title的元素（id前加#）
+
+alink = soup.select('#title')
+print(alink)
+
+（3）使用select找出所有class为link的元素（class前面加.）
+
+soup = BeautifulSoup(html_sample)
+for link in soup.select('.link'):
+	print(link)

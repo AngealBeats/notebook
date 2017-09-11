@@ -1,0 +1,4 @@
+UCLASS()修饰符，如果要让类在UE4中使用，就要加UCLASS修饰。
+
+UCLASS(Blueprintable)就是公开本类为蓝图可接受的基类 。
+
